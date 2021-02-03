@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="compressor"
+            android:text="trimmer"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/trimmerPos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cjh.videotrimmerlibrary.VideoTrimmerView
+            android:id="@+id/mVideoTrimmerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:background="@android:color/white"
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="end|center"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
