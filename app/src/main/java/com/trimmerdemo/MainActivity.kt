@@ -26,7 +26,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, TrimmerVideoByCustomDefaultConfigActivity::class.java))
     }
 
-//    fun compressorAndTrim(view : View){
-//        startActivity(Intent(this, TrimmerAndCompressorVideoActivity::class.java))
-//    }
 }
